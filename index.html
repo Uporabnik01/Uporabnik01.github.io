@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Planical modern template</title>
+    <meta property="og:title" content="Planical modern template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+        fill: var(--dl-color-gray-black);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header class="navbar-navbar navbar-root-class-name">
+          <a href="index.html" class="navbar-navlink">
+            <img
+              alt="Planical7012"
+              src="public/Branding/logo-200h.png"
+              class="navbar-branding-logo"
+            />
+          </a>
+          <div class="navbar-nav-content">
+            <div class="navbar-nav-links">
+              <a href="#Why TimeKeeper" class="navbar-link nav-link">Why us</a>
+              <a href="#Features" class="navbar-link1 nav-link">Features</a>
+            </div>
+            <a href="contact.html" class="navbar-navlink1">
+              <div class="navbar-get-started get-started">
+                <span class="navbar-text">Book a demo</span>
+              </div>
+            </a>
+          </div>
+          <div id="mobile-menu" class="navbar-mobile-menu">
+            <div class="navbar-branding">
+              <img
+                alt="image"
+                src="public/Branding/planical7012-ttpb.svg"
+                class="navbar-image"
+              />
+              <div id="close-mobile-menu" class="navbar-container">
+                <svg viewBox="0 0 1024 1024" class="navbar-icon">
+                  <path
+                    d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="navbar-nav-links1">
+              <span class="nav-link">Features</span>
+              <span class="nav-link">Why us</span>
+              <span class="nav-link">Prices</span>
+              <span class="nav-link">Contact</span>
+            </div>
+            <div class="get-started">
+              <span class="navbar-text1">Get started</span>
+            </div>
+          </div>
+          <div>
+            <div class="navbar-container2">
+              <script defer="">
+                    /*
+                Mobile menu - Code Embed
+                */
+
+                /* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app,
+                the mobile menu will still work*/
+
+                const listenForUrlChangesMobileMenu = () => {
+                    let url = location.href;
+                    document.body.addEventListener('click', () => {
+                        requestAnimationFrame(() => {
+                            if (url !== location.href) {
+                                runMobileMenuCodeEmbed();
+                                url = location.href;
+                            }
+                        });
+                    },
+                    true
+                    );
+                };
+
+                const runMobileMenuCodeEmbed = () => {
+                    // Mobile menu
+                    const mobileMenu = document.querySelector('#mobile-menu')
+
+                    // Buttons
+                    const closeButton = document.querySelector('#close-mobile-menu')
+                    const openButton = document.querySelector('#open-mobile-menu')
+
+                    // On openButton click, set the mobileMenu position left to -100vw
+                    openButton && openButton.addEventListener('click', function() {
+                        mobileMenu.style.transform = 'translateX(0%)'
+                    })
+
+                    // On closeButton click, set the mobileMenu position to 0vw
+                    closeButton && closeButton.addEventListener('click', function() {
+                        mobileMenu.style.transform = 'translateX(100%)'
+                    })
+                }
+
+                runMobileMenuCodeEmbed()
+                listenForUrlChangesMobileMenu()
+              </script>
+            </div>
+          </div>
+        </header>
+        <section class="home-view-port">
+          <div class="home-hero">
+            <div class="home-content">
+              <main class="home-main">
+                <header class="home-header">
+                  <h1 class="home-heading">
+                    The fastest way to track employees work hours
+                  </h1>
+                  <span class="home-caption">
+                    Effortless time management for a more productive workforce
+                  </span>
+                </header>
+                <div class="home-buttons">
+                  <a href="contact.html" class="home-navlink">
+                    <div class="home-get-started button">
+                      <span class="home-text">Contact us</span>
+                    </div>
+                  </a>
+                  <a href="#Features" class="home-link">
+                    <div class="home-get-started1 button">
+                      <span class="home-text01">View features</span>
+                    </div>
+                  </a>
+                </div>
+              </main>
+            </div>
+            <div class="home-image">
+              <img
+                alt="image"
+                src="public/frame%207-1000w.png"
+                class="home-image1"
+              />
+            </div>
+            <div class="home-image2">
+              <img
+                alt="image"
+                src="public/frame%207-1000w.png"
+                class="home-image3"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="Why TimeKeeper" class="home-why-time-keeper">
+          <header class="home-header1">
+            <h2 class="home-text02">
+              Why do you need a time tracking solution?
+            </h2>
+            <span class="home-text03">
+              A mobile solution at the company entrance efficiently tracks
+              employee time, while our desktop solution provides comprehensive
+              insights into employee work hours.
+            </span>
+          </header>
+          <section class="home-note">
+            <div class="home-image4">
+              <img
+                alt="image"
+                src="public/group%2033-400h.png"
+                class="home-image5"
+              />
+            </div>
+            <div class="home-content1">
+              <div class="home-main1">
+                <div class="home-caption1">
+                  <span class="section-head">DESKTOP SOLUTION</span>
+                </div>
+                <div class="home-heading1">
+                  <h2 class="section-heading home-heading2">
+                    We provide a comprehensive solution from start to finish.
+                  </h2>
+                  <p class="section-description home-paragraph">
+                    <span>
+                      Our desktop application enables seamless PDF report
+                      creation and efficient data management.
+                    </span>
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="home-note1">
+            <div class="home-image6">
+              <img
+                alt="image"
+                src="public/group%2050-900h.png"
+                class="home-image7"
+              />
+            </div>
+            <div class="home-content2">
+              <main class="home-main2">
+                <header class="home-caption2">
+                  <span class="home-section1 section-head">REPORTS</span>
+                </header>
+                <main class="home-heading3">
+                  <header class="home-header2">
+                    <h2 class="section-heading">
+                      Number of different reports based on your needs.
+                    </h2>
+                    <p class="section-description">
+                      Create customizable PDF reports tailored to your specific
+                      needs.
+                    </p>
+                  </header>
+                  <div class="home-checkmarks">
+                    <div class="mark-mark">
+                      <div class="mark-icon">
+                        <svg viewBox="0 0 1024 1024" class="mark-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="mark-label">
+                        <span>
+                          Create PDF reports with adjustable parameters tailored
+                          to your specific needs.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="mark-mark">
+                      <div class="mark-icon">
+                        <svg viewBox="0 0 1024 1024" class="mark-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="mark-label">
+                        <span>
+                          Generate PDF reports quickly and efficiently without
+                          unnecessary delays.
+                        </span>
+                      </p>
+                    </div>
+                    <div class="mark-mark">
+                      <div class="mark-icon">
+                        <svg viewBox="0 0 1024 1024" class="mark-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="mark-label">
+                        <span>Customize reports for your business.</span>
+                      </p>
+                    </div>
+                  </div>
+                </main>
+              </main>
+            </div>
+          </section>
+        </section>
+        <section id="Features" class="home-features">
+          <header class="home-header3">
+            <header class="home-left">
+              <span class="section-head">FEATURES</span>
+              <h2 class="section-heading">
+                Meet our all in one solution&nbsp;
+              </h2>
+            </header>
+            <div class="home-right"></div>
+          </header>
+          <main class="home-cards">
+            <section class="card-card card-root-class-name">
+              <div class="card-icon">
+                <svg viewBox="0 0 1024 1024" class="card-icon1">
+                  <path
+                    d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                  ></path>
+                </svg>
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Personalized</span></h1>
+                <p class="card-description">
+                  <span>
+                    Say goodbye to generic solutions and embrace a personalized
+                    approach that resonates with your clients.
+                  </span>
+                </p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name1">
+              <div class="card-icon">
+                <svg viewBox="0 0 1024 1024" class="card-icon1">
+                  <path
+                    d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                  ></path>
+                </svg>
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Compliance Tracking</span></h1>
+                <p class="card-description">
+                  <span>
+                    Stay compliant with labor regulations by tracking work hours
+                    and attendance accurately.
+                  </span>
+                </p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name2">
+              <div class="card-icon">
+                <svg viewBox="0 0 1024 1024" class="card-icon1">
+                  <path
+                    d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                  ></path>
+                </svg>
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>User-Friendly</span></h1>
+                <p class="card-description">
+                  <span>
+                    Navigate through our app with ease. Manage data and create
+                    reports effortlessly, regardless of your technical
+                    expertise.
+                  </span>
+                </p>
+              </main>
+            </section>
+          </main>
+        </section>
+        <section class="home-section3">
+          <div class="home-cube">
+            <div class="home-top side"></div>
+            <div class="home-front side"></div>
+            <div class="home-left1 side"></div>
+          </div>
+          <main class="home-banner">
+            <div class="home-header4">
+              <h2 class="section-heading">
+                <span>TimeKeeper makes</span>
+                <br />
+                <span>management easy!</span>
+                <br />
+              </h2>
+            </div>
+            <div class="home-buttons1">
+              <a href="contact.html" class="home-navlink1">
+                <div class="home-get-started2 button">
+                  <span class="home-text10">
+                    <span class="home-text11">Book a demo</span>
+                    <br />
+                  </span>
+                </div>
+              </a>
+            </div>
+          </main>
+        </section>
+        <section id="FAQ" class="home-faq">
+          <header class="home-header5">
+            <span class="section-head">FAQ</span>
+            <h2 class="home-heading7 section-heading">
+              Frequently asked questions
+            </h2>
+          </header>
+          <main class="home-accordion">
+            <div class="faq-accordion faq-root-class-name">
+              <div
+                data-role="accordion-container"
+                class="faq-element accordion-element"
+              >
+                <div class="faq-details">
+                  <span class="faq-text">
+                    Why should you choose an electronic record of working hours?
+                  </span>
+                  <span data-role="accordion-content" class="faq-text01">
+                    <span class="faq-text02">
+                      Electronic records of working hours help to process
+                      working hours faster and more accurately in the company,
+                      thereby avoiding the paper form of managing working hours.
+                      You can access your time records anywhere and anytime. All
+                      data is stored in one place, and all data is also securely
+                      archived for possible viewing of past recorded working
+                      hours.
+                    </span>
+                    <br class="faq-text03" />
+                    <span class="faq-text04"></span>
+                  </span>
+                </div>
+                <div data-role="accordion-icon">
+                  <svg viewBox="0 0 1024 1024" class="faq-icon">
+                    <path
+                      d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="faq-element1 accordion-element"
+              >
+                <div class="faq-details1">
+                  <span class="faq-text05">What does TimeKeeper offer?</span>
+                  <span data-role="accordion-content" class="faq-text06">
+                    <span class="faq-text07">
+                      TimeKeeper is a comprehensive system for recording and
+                      managing the working hours of employees. The application
+                      offers the employee and supervisor a complete record of
+                      attendance and absence from the workplace. Recorded hours
+                      can be of different types, you can record arrivals /
+                      departures to the workplace, but also different types of
+                      absences - sick leave, holidays, special leave, study
+                      leave, travel assignments, etc.
+                    </span>
+                    <br class="faq-text08" />
+                    <span class="faq-text09"></span>
+                  </span>
+                </div>
+                <div data-role="accordion-icon">
+                  <svg viewBox="0 0 1024 1024" class="faq-icon2">
+                    <path
+                      d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="faq-element2 accordion-element"
+              >
+                <div class="faq-details2">
+                  <span class="faq-text10">
+                    How are working hours recorded?
+                  </span>
+                  <span data-role="accordion-content" class="faq-text11">
+                    <span class="faq-text12">
+                      The entry of working hours into the working time record is
+                      done via mobile application. The employee or the
+                      administrator can take care of manual entry of working
+                      hours of different types. With a simple click, the user
+                      adds the working hours that were carried out today, and an
+                      unlimited number of working hours of different types can
+                      be entered on a single day.
+                    </span>
+                    <br class="faq-text13" />
+                    <span class="faq-text14"></span>
+                  </span>
+                </div>
+                <div data-role="accordion-icon">
+                  <svg viewBox="0 0 1024 1024" class="faq-icon4">
+                    <path
+                      d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="faq-element3 accordion-element"
+              >
+                <div class="faq-details3">
+                  <span class="faq-text15">
+                    How is the registration of working hours done?
+                  </span>
+                  <span data-role="accordion-content" class="faq-text16">
+                    <span class="faq-text17">
+                      Registration of working hours is possible in several ways.
+                      One of the most common ways is to register working hours
+                      through the mobile app using a card or the key obtained by
+                      the employee. The mobile app can be installed at the
+                      entrance of the company and it ensures precise records.
+                    </span>
+                    <br class="faq-text18" />
+                    <span class="faq-text19"></span>
+                  </span>
+                </div>
+                <div data-role="accordion-icon">
+                  <svg viewBox="0 0 1024 1024" class="faq-icon6">
+                    <path
+                      d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </main>
+        </section>
+        <section class="home-last-contact">
+          <main class="home-content3">
+            <header class="home-header6">
+              <h2 class="home-heading8 section-heading">
+                <span>Stop wasting time with&nbsp;</span>
+                <span>manual tracking and&nbsp;</span>
+                <br />
+                <span>use TimeKeeper!</span>
+              </h2>
+              <div class="home-buttons2">
+                <a href="contact.html" class="home-navlink2">
+                  <div class="home-ios button">
+                    <span class="home-text17">Contact sales</span>
+                  </div>
+                </a>
+              </div>
+            </header>
+            <img
+              alt="image"
+              src="public/ipad%20pro%202020-500h.png"
+              class="home-image8"
+            />
+          </main>
+        </section>
+        <footer class="home-footer">
+          <div class="home-content4">
+            <main class="home-main-content">
+              <div class="home-content5">
+                <header class="home-main3">
+                  <div class="home-header7">
+                    <img
+                      alt="image"
+                      src="public/Branding/logo-200h.png"
+                      class="home-branding"
+                    />
+                    <span class="home-text18">Effortless time management</span>
+                  </div>
+                </header>
+                <header class="home-categories">
+                  <div class="home-category">
+                    <div class="home-header8">
+                      <span class="footer-header">Solutions</span>
+                    </div>
+                    <div class="home-links">
+                      <span class="footer-link">Time Keeper Mobile</span>
+                      <span class="footer-link">TIme Keeper Dashboard</span>
+                    </div>
+                  </div>
+                </header>
+              </div>
+              <section class="home-copyright">
+                <span class="home-text22">
+                  © 2024 TimeKeeper. All Rights Reserved.
+                </span>
+              </section>
+            </main>
+            <main class="home-subscribe"></main>
+            <section class="home-copyright1">
+              <span class="home-text23">
+                © 2024 TImeKeeper. All Rights Reserved.
+              </span>
+            </section>
+          </div>
+        </footer>
+        <div>
+          <div class="home-container2">
+            <script>
+                  /*
+              Accordion - Code Embed
+              */
+
+              /* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
+              the Accordions will still work*/
+
+              const listenForUrlChangesAccordion = () => {
+                    let url = location.href;
+                    document.body.addEventListener(
+                      'click',
+                      () => {
+                        requestAnimationFrame(() => {
+                          if (url !== location.href) {
+                            runAccordionCodeEmbed();
+                            url = location.href;
+                          }
+                        });
+                      },
+                      true
+                    );
+                  };
+
+
+              const runAccordionCodeEmbed = () => {
+                  const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                  const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                  const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
+
+                  accordionContents.forEach((accordionContent) => {
+                      accordionContent.style.display = 'none'; //Hides all accordion contents
+                  });
+
+                  accordionContainers.forEach((accordionContainer, index) => {
+                      accordionContainer.addEventListener('click', () => {
+                          accordionContents.forEach((accordionContent) => {
+                          accordionContent.style.display = 'none'; //Hides all accordion contents
+                          });
+
+                          accordionIcons.forEach((accordionIcon) => {
+                              accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
+                          });
+
+                          accordionContents[index].style.display = 'flex'; // Shows accordion content
+                          accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+                      });
+                  });
+              }
+
+              runAccordionCodeEmbed()
+              listenForUrlChangesAccordion()
+
+              /*
+              Here's what the above is doing:
+                  1. Selects all accordion containers, contents, and icons
+                  2. Hides all accordion contents
+                  3. Adds an event listener to each accordion container
+                  4. When an accordion container is clicked, it:
+                      - Hides all accordion contents
+                      - Resets all icon transforms to 0deg (default)
+                      - Checks if this container has class 'accordion-open'
+                          - If it does, it removes class 'accordion-open'
+                          - If it doesn't, it:
+                              - Removes class 'accordion-open' from all containers
+                              - Adds class 'accordion-open' to this container
+                              - Shows accordion content
+                              - Rotates accordion icon 180deg
+              */
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
